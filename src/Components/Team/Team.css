@@ -1,0 +1,13 @@
+.our-team .pic{
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 0 5px 2px rgb(50 50 50 / 25%);
+}
+
+.our-team .pic img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}

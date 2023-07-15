@@ -1,0 +1,17 @@
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:auto;
+    width:100%;}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:auto;
+    width:100%;
+}
+footer a{
+    color: var(--brand-col);
+}
+footer a:hover{
+    color: var(--brand-col);
+}

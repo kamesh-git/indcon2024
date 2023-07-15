@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap');
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../public/images/fonts/ComicSansMS3.ttf');
+}
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}

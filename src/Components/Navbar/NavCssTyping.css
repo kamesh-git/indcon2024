@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+.containertype {
+    width: fit-content;
+    display: grid;
+    place-items: center;
+}
+p.h1{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    font-weight: 500;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    -webkit-animation: typing 6s steps(15, end) alternate infinite;
+}
+    
+  @keyframes typing {
+    0% {width: 0%}
+    5% {border-color: transparent}
+    10% {width: 0%;border-color: orange}
+    40%{width: 100%;border-color: orange}
+    45%{border-color: transparent}
+    50%{border-color: orange}
+    55%{border-color: transparent}
+    60%{width: 100%;border-color: orange}
+    90% {width: 0%;border-color: orange}
+    95% {border-color: transparent}
+    100%{width: 0%;border-color: orange}
+  }
+
+
+
+.navbar-accordion button::after{
+  --icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+  --size:1.25rem;
+}
+.navbar-accordion button{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  font: inherit;
+  box-shadow: 0;
+  border: 0;
+}
+.navbar-accordion button::after {
+  flex-shrink: 0;
+  width: var(--size);
+  height: var(--size);
+  margin-left: 5px;
+  content: "";
+  background-image: var(--icon);
+  background-repeat: no-repeat;
+  background-size: var(--size);
+  transition: 0.2s ease-in-out;
+}
+.navbar-accordion:hover button::after{
+  transform: rotate(180deg);
+}
+.navbar-accordion #items-container{
+  background: rgb(108, 117, 125);
+  border-radius: 10px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+  width: inherit;
+
+}
+.navbar-accordion:hover #items-container{
+  max-height: 500px;
+}
+.navbar-accordion #items-container ul{
+  list-style: none;
+  padding: 10px 15px;
+  margin: 0;
+}
+.navbar-accordion #items-container li a{
+  text-decoration: none;
+}
+.navbar-accordion #items-container li:hover a{
+}
+
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  /* width: 80px; */
+  height: 4vw;
+}

@@ -1,0 +1,87 @@
+:root{
+  --gray05: #eeeef0;
+  --gray90: #0a0a23;
+
+  
+  /* white theme palletes */
+  --font-color: black;
+  color: black;
+  --brand-col:#000000;
+  --brand-light-col:#ffffff;
+  --brand-dark-col:#000000;
+  transition: 5s ease;
+}
+.dark-theme{
+  background-color: #232323;
+  --font-color: hsl(0, 0%, 90%);
+  color: var(--font-color);
+  --brand-col:var(--font-color);
+  --brand-dark-col:var(--font-color);
+  --brand-light-col:hsl(0, 1%, 10%);
+  transition: background 5s linear;
+}
+body {
+  color: var(--font-color);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+.fun{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.social a img:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: var(--brand-light-col);
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.footer-image img{
+  width: 150px;
+  height: 60px;
+}

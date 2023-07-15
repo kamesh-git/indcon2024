@@ -1,0 +1,49 @@
+.nav-link {
+    display: flex;
+    font-size: larger;
+    font-family: myFirstFont;
+    font-weight:500;
+    cursor: pointer;
+    color: var(--brand-col);
+    position: relative;
+    padding: 0 !important;
+    margin: 0.5rem;
+    width: fit-content;
+}
+
+
+.navbar-nav .nav-link::before {
+    display: flex;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: var(--brand-col);
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s;
+
+}
+
+.navbar-nav .nav-link:hover:not(.themechanger):before,
+.navbar-nav .nav-link.active:not(.themechanger):before {
+    width: 100%;
+    color: var(--brand-col);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--brand-col);
+}
+
+/* logo resize */
+@media (max-width: 992px) {
+    .nav-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        background-color:var(--brand-light-col);
+        width: 100vw;
+    }
+}
