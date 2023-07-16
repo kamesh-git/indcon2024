@@ -10,10 +10,10 @@ const NavCssTyping = () => {
   useEffect(() => {
     const textLoad = () => {
       setTimeout(() => {
-        setchangeText('INDCON 2023...')
+        setchangeText('Society of Industrial Engineers')
       }, 0);
       setTimeout(() => {
-        setchangeText('Society of Industrial Engineers')
+        setchangeText('INDCON 2024...')
       }, 6000);
       setTimeout(() => {
         setchangeText('National level Technical Symposium')
