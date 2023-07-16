@@ -1,66 +1,116 @@
 const team_indcon = [
     {
-        name:'Velmurugan',
-        designation:'General Secretary',
-        image:'Velmurugan',
+        roll: 9,
+        Name: "JAIKANTH I",
+        Designation: "GENERAL SECRETARY"
     },
     {
-        name:'Sanjana',
-        designation:'General Secretary',
-        image:'Sanjana',
+        roll: 17,
+        Name: "SHNEHA P",
+        Designation: "GENERAL SECRETARY"
     },
     {
-        name:'Karthikeyan R',
-        designation:'Treasurer',
-        image:'Karthikeyan R',
+        roll: 10,
+        Name: "JAYAKRISHNAN R",
+        Designation: "STUDENT TREASURER"
     },
     {
-        name:'AJAY',
-        designation:'Joint Secretary',
-        image:'AJAY',
+        roll: 24,
+        Name: "KRITHIKA G",
+        Designation: "JOINT SECRETARY"
     },
     {
-        name:'Sarathi',
-        designation:'Joint Secretary',
-        image:'Sarathi',
+        roll: 25,
+        Name: "NARAYANAN AL",
+        Designation: "JOINT SECRETARY"
     },
     {
-        name:'Harini',
-        designation:'Events',
-        image:'Harini',
+        roll: 26,
+        Name: "RISI BALAN KG",
+        Designation: "JOINT SECRETARY"
     },
     {
-        name:'Karthikeyan P',
-        designation:'Design',
-        image:'Karthikeyan P',
+        roll: 4,
+        Name: "Mr. ARAVINDH KUMAR R",
+        Designation: "EXTRA-CURRICULAR ACTIVITIES"
     },
     {
-        name:'Riya Fernando',
-        designation:'Beacon',
-        image:'Riya Fernando',
+        roll: 2,
+        Name: "Aishvarya Lakshmi G S",
+        Designation: "CAREER GUIDANCE"
     },
     {
-        name:'Akil arooran',
-        designation:'Beacon',
-        image:'Akil arooran',
+        roll: 6,
+        Name: "DHARSHINI R",
+        Designation: "CAREER GUIDANCE"
     },
     {
-        name:'Aasikaran M',
-        designation:'Marketing',
-        image:'Aasikaran M',
+        roll: 11,
+        Name: "Kamesh A",
+        Designation: "EVENTS"
     },
     {
-        name:'Gorty prasanna srinivasan',
-        designation:'Logistics',
-        image:'Gorty prasanna srinivasan',
+        roll: 22,
+        Name: "S. Viswanath",
+        Designation: "EVENTS"
     },
     {
-        name:'Deepthi Hannah Sundar',
-        designation:'Content',
-        image:'Deepthi Hannah Sundar',
+        roll: 1,
+        Name: "Aadityan S",
+        Designation: "DESIGN"
     },
+    {
+        roll: 16,
+        Name: "Sarathi R",
+        Designation: "DESIGN"
+    },
+    {
+        roll: 18,
+        Name: "Soumya Ranjan Sethi",
+        Designation: "MARKETING"
+    },
+    {
+        roll: 13,
+        Name: "PRANEETHA V",
+        Designation: "BEACON"
+    },
+    {
+        roll: 19,
+        Name: "SREE SUNDHARII SAKTHEVELAN",
+        Designation: "BEACON"
+    },
+    {
+        roll: 3,
+        Name: "Aravinda Lochanan KST",
+        Designation: "LOGISTICS"
+    },
+    {
+        roll: 15,
+        Name: "SanthoshKumar S",
+        Designation: "5S IN-CHARGE"
+    },
+    {
+        roll: 7,
+        Name: "R.Harshene",
+        Designation: "CONTENT & DOCUMENTATION"
+    },
+    {
+        roll: 23,
+        Name: "SIVA SANKAR RAJA K",
+        Designation: "SOCIAL MEDIA"
+    },
+    {
+        roll: 21,
+        Name: "Tisha N",
+        Designation: "SOCIAL MEDIA"
+    },
+    {
+        roll: 5,
+        Name: "ARUN KALYANARAMAN R",
+        Designation: "HUMAN RESOURCE"
+    }
 ]
 
 const images_url = '/images/'
 
-export {team_indcon,images_url}
+export { team_indcon, images_url }
