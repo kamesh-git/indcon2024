@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,6 +13,11 @@ import ThemeChanger from '../Others/ThemeChanger';
 const NavbarComp = () => {
 
     const [navbarExpand, setNavbarExpand] = useState(false)
+    const [navVariant, setNavVariant] = useState('light')
+
+    useEffect(() => {
+        localStorage.getItem('theme') == 'dark' && setNavVariant('dark')
+    })
     
     const closeNavbar = () => setNavbarExpand(false)
     const toggleNavbar = () => setNavbarExpand(!navbarExpand)
@@ -21,11 +26,12 @@ const NavbarComp = () => {
         document.querySelector('html').classList.toggle('dark-theme')
         localStorage.getItem('theme') == 'dark' ? localStorage.setItem('theme','light') : localStorage.setItem('theme','dark')
         localStorage.getItem('theme') == 'dark' ? setIndconlogo(images_url+'navbar images/indcon logo dark.png') : setIndconlogo(images_url+'navbar images/indcon logo.png')
+        setNavVariant(localStorage.getItem('theme'))
         closeNavbar()
     }
     return (
         <div>
-            <Navbar onToggle={toggleNavbar} expanded={navbarExpand} variant='light' style={{ backgroundColor: 'var(--brand-light-col)' }} sticky={'top'} expand="lg">
+            <Navbar onToggle={toggleNavbar} expanded={navbarExpand} variant={navVariant} style={{ backgroundColor: 'var(--brand-light-col)' }} sticky={'top'} expand="lg">
                 <Container style={{maxWidth:'100%',paddingLeft:'0'}}>
                     <Navbar.Brand className='ps-4'>
                         <NavLink className='nav-link nav-logo' to={'/'}>

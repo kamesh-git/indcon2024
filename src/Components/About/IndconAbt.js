@@ -12,6 +12,9 @@ const IndconAbt = () => {
 				</div>
 				<div style={{background:'transparent'}} className="card pb-3">
 					<div className=" align-items-start row g-0">
+						<div className="col-lg-4 order-lg-1 d-flex justify-content-center">
+							<img src={images_url+"navbar images/indcon.jpg"} className="img-fluid rounded-start" alt="..."></img>
+						</div>
 						<div className="col-lg-8">
 							<div style={{ textAlign: 'justify' }} className="card-body">
 								<p className="card-text about-text">INDCON, organized by the Society of Industrial
@@ -30,9 +33,6 @@ const IndconAbt = () => {
 									perception by presenting high quality content
 									oriented papers</p>
 							</div>
-						</div>
-						<div className="col-lg-4 d-flex justify-content-center">
-							<img src={images_url+"navbar images/indcon.jpg"} className="img-fluid rounded-start" alt="..."></img>
 						</div>
 					</div>
 				</div>

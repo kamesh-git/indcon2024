@@ -108,9 +108,9 @@ const team_indcon = [
         roll: 5,
         Name: "ARUN KALYANARAMAN R",
         Designation: "HUMAN RESOURCE"
-    }
+    },
 ]
 
-const images_url = '/images/'
+const images_url = 'https://sie-doie.github.io/indcon2024-assets/'
 
 export { team_indcon, images_url }
