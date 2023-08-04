@@ -30,6 +30,11 @@ const team_indcon = [
         Designation: "JOINT SECRETARY"
     },
     {
+        roll: 27,
+        Name: "Bharath Kandoi",
+        Designation: "EXTRA-CURRICULAR ACTIVITIES"
+    },
+    {
         roll: 4,
         Name: "Mr. ARAVINDH KUMAR R",
         Designation: "EXTRA-CURRICULAR ACTIVITIES"
@@ -65,7 +70,7 @@ const team_indcon = [
         Designation: "DESIGN"
     },
     {
-        roll: 18,
+        roll: 19,
         Name: "Soumya Ranjan Sethi",
         Designation: "MARKETING"
     },
@@ -75,7 +80,7 @@ const team_indcon = [
         Designation: "BEACON"
     },
     {
-        roll: 19,
+        roll: 20,
         Name: "SREE SUNDHARII SAKTHEVELAN",
         Designation: "BEACON"
     },
