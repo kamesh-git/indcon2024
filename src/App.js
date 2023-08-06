@@ -41,6 +41,7 @@ function App() {
       localStorage.getItem('theme') == 'dark' ? setIndconlogo(images_url+'navbar images/indcon logo dark.png') : setIndconlogo(images_url+'navbar images/indcon logo.png')
     },[])
     return (
+      
       <ContextProvider.Provider value={{indconlogo,setIndconlogo}}>
         <NavbarComp />
         <div className="ps-md-5 pe-md-5" style={{ backgroundColor: 'var(--brand-light-col)',position:'relative' }}>
@@ -61,14 +62,15 @@ function App() {
 
   return (
     <div className="AppClass">
-      {document.readyState === 'interactive' &&
+            <div>site under development</div> 
+      {/* {document.readyState === 'interactive' &&
         <>
           <Routes>
             <Route path="/*" element={<NavFooterComp />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>
           <ScrollTopBtn />
-        </>}
+        </>} */}
 
     </div>
   );

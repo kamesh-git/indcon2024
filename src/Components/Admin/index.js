@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import useFirebase from '../../assests/useFirebase';
-import Panel from './Panel.js';
 import SignIn from './SignIn';
+import MonthlyNews from './MonthlyNews';
 
 const Admin = () => {
     const {auth} = useFirebase();
-  const [isSignedIn,setIsSignedIn] = useState(false)
+    const [isSignedIn,setIsSignedIn] = useState(false)
 
 
 
@@ -21,10 +21,18 @@ const Admin = () => {
       }
     })
 
+    function AdminContent({role}){
+      return (
+        <>
+          <MonthlyNews />
+        </>
+      )
+    }
+
   return (
     <>
     <div className="row m-5"><NavLink className={'col-1'} to='/'><Button variant='dark'>Back</Button></NavLink></div>
-    {isSignedIn ? <Panel /> : <SignIn /> }
+    {isSignedIn ? <AdminContent role={'admin'} /> : <SignIn /> }
     </>
   )
 }

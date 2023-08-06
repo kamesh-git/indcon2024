@@ -31,7 +31,7 @@ const team_indcon = [
     },
     {
         roll: 27,
-        Name: "Bharath Kandoi",
+        Name: "Bharat Kandoi",
         Designation: "EXTRA-CURRICULAR ACTIVITIES"
     },
     {
@@ -95,7 +95,12 @@ const team_indcon = [
         Designation: "5S IN-CHARGE"
     },
     {
-        roll: 7,
+        roll: 5,
+        Name: "ARUN KALYANARAMAN R",
+        Designation: "HUMAN RESOURCE"
+    },
+    {
+        roll: 8,
         Name: "R.Harshene",
         Designation: "CONTENT & DOCUMENTATION"
     },
@@ -109,13 +114,8 @@ const team_indcon = [
         Name: "Tisha N",
         Designation: "SOCIAL MEDIA"
     },
-    {
-        roll: 5,
-        Name: "ARUN KALYANARAMAN R",
-        Designation: "HUMAN RESOURCE"
-    },
 ]
 
-const images_url = 'https://sie-doie.github.io/indcon2024-assets/'
+const images_url = 'https://github.com/Sie-doie/indcon2024-assets/'
 
 export { team_indcon, images_url }
