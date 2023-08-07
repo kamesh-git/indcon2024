@@ -8,18 +8,18 @@ import MonthlyNews from './MonthlyNews';
 
 const Admin = () => {
     const {auth} = useFirebase();
-    const [isSignedIn,setIsSignedIn] = useState(false)
+    const [isSignedIn,setIsSignedIn] = useState(true)
 
 
 
-    onAuthStateChanged(auth,(user) => {
-      if(user){
-        setIsSignedIn(true) 
-      }
-      else{
-        setIsSignedIn(false)
-      }
-    })
+    // onAuthStateChanged(auth,(user) => {
+    //   if(user){
+    //     setIsSignedIn(true) 
+    //   }
+    //   else{
+    //     setIsSignedIn(false)
+    //   }
+    // })
 
     function AdminContent({role}){
       return (

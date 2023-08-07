@@ -62,15 +62,14 @@ function App() {
 
   return (
     <div className="AppClass">
-            <div>site under development</div> 
-      {/* {document.readyState === 'interactive' &&
+      {document.readyState === 'interactive' &&
         <>
           <Routes>
             <Route path="/*" element={<NavFooterComp />} />
             <Route path="/admin" element={<Admin />} />
           </Routes>
           <ScrollTopBtn />
-        </>} */}
+        </>}
 
     </div>
   );
