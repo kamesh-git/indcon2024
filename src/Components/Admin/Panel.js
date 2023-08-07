@@ -5,8 +5,8 @@ import useFirebase from '../../assests/useFirebase'
 
 const Panel = () => {
 
-  const [data, setData] = useState([null])
-  const [data1, setData1] = useState([null])
+  const [data, setData] = useState([])
+  const [data1, setData1] = useState([])
   const { db } = useFirebase()
 
   async function startfunc() {

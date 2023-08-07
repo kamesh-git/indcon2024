@@ -116,6 +116,7 @@ const team_indcon = [
     },
 ]
 
-const images_url = 'https://github.com/Sie-doie/indcon2024-assets/'
+const images_url = 'https://Sie-doie.github.io/indcon2024-assets/'
+// const images_url = 'images/'
 
 export { team_indcon, images_url }
