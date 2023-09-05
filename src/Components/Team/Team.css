@@ -3,11 +3,26 @@
     border-radius: 20px;
     position: relative;
     transition: all 0.3s ease 0s;
-    box-shadow: 0 0 5px 2px rgb(50 50 50 / 25%);
+    border-width: 2px;
+    border-style: solid;
 }
 
-.our-team .pic img {
+.our-team .pic .img img{width: 100%;}
+.our-team .pic .img {
+    transition: all 0.3s;
     border-radius: 5px;
     width: 100%;
     height: auto;
+    /* border-color: brown; */
+}
+.our-team .pic:hover .img{
+    transform: scale(0.4) translateY(-50%);
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.our-team .pic .team-content{transition: 0.3s;}
+.our-team .pic:hover .team-content{
+    transform: translateY(-135%);
 }

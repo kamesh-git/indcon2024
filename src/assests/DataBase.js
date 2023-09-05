@@ -17,17 +17,20 @@ const team_indcon = [
     {
         roll: 24,
         Name: "KRITHIKA G",
-        Designation: "JOINT SECRETARY"
+        Designation: "JOINT SECRETARY",
+        tag:'orange',
     },
     {
         roll: 25,
         Name: "NARAYANAN AL",
-        Designation: "JOINT SECRETARY"
+        Designation: "JOINT SECRETARY",
+        tag:'purple',
     },
     {
         roll: 26,
         Name: "RISI BALAN KG",
-        Designation: "JOINT SECRETARY"
+        Designation: "JOINT SECRETARY",
+        tag:'darkgreen',
     },
     {
         roll: 27,
