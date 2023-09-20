@@ -7,7 +7,7 @@ const team_indcon = [
     {
         roll: 17,
         Name: "SHNEHA P",
-        Designation: "GENERAL SECRETARY"
+        Designation: "LADY GENERAL SECRETARY"
     },
     {
         roll: 10,
