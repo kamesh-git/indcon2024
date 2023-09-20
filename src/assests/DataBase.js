@@ -33,11 +33,6 @@ const team_indcon = [
         tag:'darkgreen',
     },
     {
-        roll: 27,
-        Name: "Bharat Kandoi",
-        Designation: "EXTRA-CURRICULAR ACTIVITIES"
-    },
-    {
         roll: 4,
         Name: "Mr. ARAVINDH KUMAR R",
         Designation: "EXTRA-CURRICULAR ACTIVITIES"
