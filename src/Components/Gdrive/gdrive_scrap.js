@@ -7,7 +7,8 @@ const Files = ({ id }) => {
     const [loading, setloading] = useState(true);
 
     useEffect(async () => {
-        const html = await fetch(`https://drive.google.com/embeddedfolderview?id=${id}#list`).then(resp => resp.text())
+        const url = 'https://corsproxy.io/?' + encodeURIComponent(`https://drive.google.com/embeddedfolderview?id=${id}#list`);
+        const html = await fetch(url).then(resp => resp.text())
         const parent = document.createElement('div')
         parent.innerHTML = html
         const folders = parent.querySelectorAll('.flip-entry')
