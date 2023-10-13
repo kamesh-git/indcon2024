@@ -17,6 +17,7 @@ import "./App.css"
 import ContextProvider from "./assests/Contextprovider";
 import { useState } from "react";
 import { images_url } from "./assests/DataBase";
+import Resources from "./Components/Gdrive/resources";
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
             <Route path="/events" element={<PreEvents />} />
             <Route path="/team" element={<Team />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/resources" element={<Resources />} />
             {/* <Route path="/paytm" element={<PaytmPay />} /> */}
             <Route path="*" element={<NavbarCarousel />} />
           </Routes>

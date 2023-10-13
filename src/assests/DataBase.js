@@ -117,4 +117,24 @@ const team_indcon = [
 const images_url = 'https://Sie-doie.github.io/indcon2024-assets/'
 // const images_url = 'images/'
 
-export { team_indcon, images_url }
+const rs_gdrive = [
+    {
+        name:"3",
+        url:"12GpFiRM5FtvLW3zpsAbADeBh7JcUWAQf",
+    },
+    {
+        name:"4",
+        url:"1Bq2ph1ax5I3blKtCMEazd-iNLILwIqgS",
+    },
+    {
+        name:"5",
+        url:"1LUCgZgrzyd9Zxu1o1p-oA-9SnKnn2G7C",
+    },
+    {
+        name:"6",
+        url:"17st3wo4l5cRAu2gpsncxONBeBss07fLN",
+    },
+    
+]
+
+export { team_indcon, images_url,rs_gdrive }
