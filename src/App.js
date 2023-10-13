@@ -18,6 +18,7 @@ import ContextProvider from "./assests/Contextprovider";
 import { useState } from "react";
 import { images_url } from "./assests/DataBase";
 import Resources from "./Components/Gdrive/resources";
+import Test from "./Components/Test/test";
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
     return (
       
       <ContextProvider.Provider value={{indconlogo,setIndconlogo}}>
-        <NavbarComp />
+        {/* <NavbarComp /> */}
         <div className="ps-md-5 pe-md-5" style={{ backgroundColor: 'var(--brand-light-col)',position:'relative' }}>
           <Routes>
             <Route path="/" element={<NavbarCarousel />} />
@@ -53,11 +54,12 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/test/*" element={<Test />} />
             {/* <Route path="/paytm" element={<PaytmPay />} /> */}
             <Route path="*" element={<NavbarCarousel />} />
           </Routes>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </ContextProvider.Provider>
     )
   }
