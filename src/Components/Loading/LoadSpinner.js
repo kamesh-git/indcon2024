@@ -26,7 +26,7 @@ const LoadSpinner = ({ sucessMsg,bgcolor }) => {
           You have already registered
         </div>
         :
-        <div style={{ height: '40vh', width: '100%', backgroundColor: bgcolor || '#263038' ,display:'flex',justifyContent:'center',alignItems:'center' }}>
+        <div style={{ height: '40vh', width: '100%', backgroundColor: bgcolor || 'transparent' ,display:'flex',justifyContent:'center',alignItems:'center' }}>
           <span className="loader"></span>
         </div>
       }

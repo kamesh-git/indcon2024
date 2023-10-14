@@ -18,6 +18,7 @@ import ContextProvider from "./assests/Contextprovider";
 import { useState } from "react";
 import { images_url } from "./assests/DataBase";
 import Resources from "./Components/Gdrive/resources";
+import Test from "./Components/Test/test";
 
 
 function App() {
@@ -53,6 +54,8 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/:googId" element={<Resources />} />
+            <Route path="/test/*" element={<Test />} />
             {/* <Route path="/paytm" element={<PaytmPay />} /> */}
             <Route path="*" element={<NavbarCarousel />} />
           </Routes>
