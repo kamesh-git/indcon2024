@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { rs_gdrive } from "../../assests/DataBase";
-import { Button, Col, Row } from "react-bootstrap";
+import { Button, Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import Files from "./gdrive_scrap";
 import LoadSpinner from "../Loading/LoadSpinner";
 import { Link, Route, Routes, useParams } from "react-router-dom";
@@ -43,7 +43,9 @@ const Resources = () => {
                   <div style={{ height: "200px", overflow: "hidden", display: 'flex', flexDirection: 'column' }}>
                     <img src={img.src} alt={img.alt} />
                   </div>
-                  <span style={{whiteSpace:"nowrap",display:"inline-block",width:'100%',overflow:'hidden',textOverflow:"ellipsis"}} className="text-center p-2">{name}</span>
+                  <OverlayTrigger placement={'bottom'} overlay={<Tooltip id="tooltip-disabled">{name}</Tooltip>}>
+                    <span style={{ whiteSpace: "nowrap", display: "inline-block", width: '100%', overflow: 'hidden', textOverflow: "ellipsis" }} className="text-center p-2">{name}</span>
+                  </OverlayTrigger>
                 </div>
               </a>
 
@@ -53,7 +55,9 @@ const Resources = () => {
               <div style={{ border: '5px solid grey' }}>
                 <img style={{ width: '100%' }} src="/folder.png" />
                 <br></br>
-                <span style={{whiteSpace:"nowrap",display:"inline-block",width:'100%',overflow:'hidden',textOverflow:"ellipsis"}} className="text-center p-2">{name}</span>
+                <OverlayTrigger placement={'bottom'} overlay={<Tooltip id="tooltip-disabled">{name}</Tooltip>}>
+                  <span style={{ whiteSpace: "nowrap", display: "inline-block", width: '100%', overflow: 'hidden', textOverflow: "ellipsis" }} className="text-center p-2">{name}</span>
+                </OverlayTrigger>
               </div>
             </Link>
           )}
