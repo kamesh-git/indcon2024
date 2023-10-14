@@ -4,16 +4,19 @@ import { rs_gdrive } from "../../assests/DataBase";
 import { Button, Col, Row } from "react-bootstrap";
 import Files from "./gdrive_scrap";
 import LoadSpinner from "../Loading/LoadSpinner";
+import { Link, Route, Routes, useParams } from "react-router-dom";
+import HeadingComp from "../Others/HeadingComp";
 
 const Resources = () => {
-  const [gID, setGID] = useState(rs_gdrive[0].url);
 
-  const [loading, setloading] = useState(true);
+  const [loading, setloading] = useState(false);
   const [htmlRes, setHtmlRes] = useState("");
+  const { googId } = useParams();
 
-  async function init(nid) {
+
+  async function init(id) {
     setloading(false);
-    const uid = nid || gID; //test
+    const uid = atob(id)
     const url =
       "https://corsproxy.io/?" +
       encodeURIComponent(
@@ -23,67 +26,74 @@ const Resources = () => {
     const parent = document.createElement("div");
     parent.innerHTML = html;
     const folders = Array.from(parent.querySelectorAll(".flip-entry"));
-    const res = folders.map((item) => {
+    console.log(folders)
+    let res = folders.map((item, index) => {
       const gid = item.getAttribute("id").replace("entry-", "");
       const img = item.querySelector("img");
       const src = item.querySelector("a").getAttribute("href");
       const name = item.querySelector(".flip-entry-title").innerHTML;
-      setloading(true);
+
 
       return (
-        <Col xs={6} md={4} lg={2}>
+        <Col style={{ cursor: 'pointer' }} className="p-2" key={index} xs={6} md={4} lg={2}>
           {img !== null ? (
             <>
-              <a href={src} target="_blank" rel="noreferrer">
-                <img src={img.src} alt={img.alt} />
-                <br></br>
-                <p>{name}</p>
+              <a style={{ textDecoration: 'none', color: 'inherit' }} href={src} target="_blank" rel="noreferrer">
+                <div style={{ border: '5px solid grey' }}>
+                  <div style={{ height: "200px", overflow: "hidden", display: 'flex', flexDirection: 'column' }}>
+                    <img src={img.src} alt={img.alt} />
+                  </div>
+                  <span style={{whiteSpace:"nowrap",display:"inline-block",width:'100%',overflow:'hidden',textOverflow:"ellipsis"}} className="text-center p-2">{name}</span>
+                </div>
               </a>
+
             </>
           ) : (
-            <div onClick={() => init(gid)}>
-              <img width={20} src="/folder.png" />
-              <br></br>
-              <p>{name}</p>
-            </div>
+            <Link style={{ textDecoration: 'none', color: 'inherit' }} to={`/resources/${btoa(gid)}`}>
+              <div style={{ border: '5px solid grey' }}>
+                <img style={{ width: '100%' }} src="/folder.png" />
+                <br></br>
+                <span style={{whiteSpace:"nowrap",display:"inline-block",width:'100%',overflow:'hidden',textOverflow:"ellipsis"}} className="text-center p-2">{name}</span>
+              </div>
+            </Link>
           )}
         </Col>
       );
     });
+    if (folders.length === 0) res = <h1 className="text-center">No item in the folder</h1>;
+    setloading(true);
     setHtmlRes(res);
   }
 
   useEffect(() => {
-    init();
-  }, []);
+    init(googId || btoa(rs_gdrive[0].url));
+  }, [googId]);
+
 
   return (
     <>
-      <div>
-        <Row xs>
-          {rs_gdrive.map((item) => (
-            <Col xs={12} sm={6} md={4} lg={3}>
+      <HeadingComp head={'SIE Resources'} />
+      <div className="d-flex justify-content-center flex-wrap">
+        {rs_gdrive.map((item, index) => (
+          <div className="m-1" key={index}>
+            <Link to={`/resources/${btoa(item.url)}`}>
               <Button
-                onClick={() => {
-                  init(item.url);
-                }}
-                size="lg"
+                variant={googId ? atob(googId) == item.url ? 'secondary' : 'outline-secondary' : rs_gdrive[0].url == item.url ? 'secondary' : 'outline-secondary'}
               >
-                {item.name} th
+                {item.name}
               </Button>
-            </Col>
-          ))}
-        </Row>
-
-        <div>
-          {loading ? (
-            <>
-              <Row>{htmlRes}</Row>
-            </>
-          ) : (
-            <LoadSpinner bgcolor={"#ffffff"} />
-          )}
-        </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="m-2">
+        {loading ? (
+          <>
+            <Row className="justify-content-center" >{htmlRes}</Row>
+          </>
+        ) : (
+          <LoadSpinner />
+        )}
       </div>
     </>
   );

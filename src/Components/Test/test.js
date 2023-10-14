@@ -11,17 +11,15 @@ function Default({msg}) {
 function ProfilePage() {
   // Get the userId param from the URL.
   let { userId } = useParams();
-  console.log("userI");
-  return <Link to={`/test/users/${parseInt(userId) + 1}`}>{  userId  }</Link>;
+  console.log(userId);
+  return <Link to={`/test/${userId + 'k'}`}>{  userId  } th</Link>;
 }
 
 export default function Test() {
   return (
     <Routes>
-      <Route path="users" element>
-        <Route path=":userId" element={<ProfilePage />} />
-      </Route>
-      <Route path="*" element={<Default />} />
+      <Route path="/:userId" element={<ProfilePage />} />
+      <Route path="/" element={<ProfilePage />} />
     </Routes>
   );
 }

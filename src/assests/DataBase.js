@@ -119,20 +119,28 @@ const images_url = 'https://Sie-doie.github.io/indcon2024-assets/'
 
 const rs_gdrive = [
     {
-        name:"3",
-        url:"12GpFiRM5FtvLW3zpsAbADeBh7JcUWAQf",
+        name:"SIE Events",
+        url:"13l6V9J2k4PdV6FNwjrpvSUZOEa5LCSPJ",
     },
     {
-        name:"4",
-        url:"1Bq2ph1ax5I3blKtCMEazd-iNLILwIqgS",
+        name:"I.E. placement drive",
+        url:"1AormII19bVdGNgFf23m2Fz9si_CsNLqN",
     },
     {
-        name:"5",
-        url:"1LUCgZgrzyd9Zxu1o1p-oA-9SnKnn2G7C",
+        name:"I.E. study materials",
+        url:"1Sy_EGhW-Y8eVVuV2N4zhBh1yEdkj0eWc",
     },
     {
-        name:"6",
-        url:"17st3wo4l5cRAu2gpsncxONBeBss07fLN",
+        name:"I.E. question Bank",
+        url:"1T9C0zCt9_tPpb1c0iUd-GkG0rPRLmETd",
+    },
+    {
+        name:"I.E. Internship report",
+        url:"11K8Ig5db6bnNOL81EIepNfolXGo7hkqx",
+    },
+    {
+        name:"EVOLVE (MONTHLY NEWSLETTER)",
+        url:"1BlUJDZqV1AZvoKJvlis6agsiITU2dTZT",
     },
     
 ]
