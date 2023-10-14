@@ -56,6 +56,7 @@ const NavbarComp = () => {
                             <NavLink onClick={closeNavbar} className='nav-link' to={'/events'}>Events</NavLink>
                             <NavLink onClick={closeNavbar} className='nav-link' to={'/team'}>Team</NavLink>
                             <NavLink onClick={closeNavbar} className='nav-link' to={'/gallery'}>Gallery</NavLink>
+                            <NavLink onClick={closeNavbar} className='nav-link' to={'/resources'}>Resources</NavLink>
                             <Link onClick={closeNavbar} className='nav-link' to='ContactScroll' smooth={true} duration={500} >Contact</Link>
                             <Link className='nav-link themechanger' to="#" smooth={true} duration={500} ><ThemeChanger listener={themechange} /></Link>
                         </Nav>
