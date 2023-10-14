@@ -13,7 +13,6 @@ const Gallery = () => {
     for (let index = -1; index < numImages-1; index++) {
       temp.push((num+index)%(numImages)+1)
     }
-    console.log(temp)
     setImgModal(temp)
     setGalleryShow(num)
   }

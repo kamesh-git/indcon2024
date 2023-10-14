@@ -11,7 +11,6 @@ function Default({msg}) {
 function ProfilePage() {
   // Get the userId param from the URL.
   let { userId } = useParams();
-  console.log(userId);
   return <Link to={`/test/${userId + 'k'}`}>{  userId  } th</Link>;
 }
 

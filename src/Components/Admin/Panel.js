@@ -16,7 +16,6 @@ const Panel = () => {
     docs.forEach(doc => {
       docTemp.push(doc.data())
     })
-    console.log(docTemp)
     setData(docTemp)
   }
   async function nextfunc() {
@@ -26,7 +25,6 @@ const Panel = () => {
     docs.forEach(doc => {
       docTemp.push(doc.data())
     })
-    console.log(docTemp)
     setData1(docTemp)
   }
   function ExportData(incdata, xlname) {

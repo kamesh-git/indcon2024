@@ -26,7 +26,6 @@ const Resources = () => {
     const parent = document.createElement("div");
     parent.innerHTML = html;
     const folders = Array.from(parent.querySelectorAll(".flip-entry"));
-    console.log(folders)
     let res = folders.map((item, index) => {
       const gid = item.getAttribute("id").replace("entry-", "");
       const img = item.querySelector("img");

@@ -45,12 +45,9 @@ const EventCards = ({ data }) => {
             window.dispatchEvent(new Event('resize'));
         });
         window.addEventListener('resize', function () {
-            console.log('modal resize')
             document.querySelectorAll('.containerflip').forEach((elem, key) => {
-                console.log(elem.getElementsByClassName('front')[0], elem.getElementsByClassName('back')[0])
                 const frontheight = elem.getElementsByClassName('front')[0].clientHeight
                 const backheight = elem.getElementsByClassName('back')[0].clientHeight
-                console.log(frontheight, backheight)
                 elem.style.height = (frontheight > backheight) ? frontheight + 'px' : backheight + 'px';
             })
         })
