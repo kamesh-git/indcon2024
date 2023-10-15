@@ -33,6 +33,11 @@ const team_indcon = [
         tag:'darkgreen',
     },
     {
+        roll: 14,
+        Name: "RAJ KUMAR K",
+        Designation: "ALUMNI RELATIONS",
+    },
+    {
         roll: 4,
         Name: "Mr. ARAVINDH KUMAR R",
         Designation: "EXTRA-CURRICULAR ACTIVITIES"
