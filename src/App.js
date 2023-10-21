@@ -19,6 +19,7 @@ import { useState } from "react";
 import { images_url } from "./assests/DataBase";
 import Resources from "./Components/Gdrive/resources";
 import Test from "./Components/Test/test";
+import CegAbt from "./Components/About/CegAbt";
 
 
 function App() {
@@ -36,9 +37,12 @@ function App() {
 
 
   const NavFooterComp = () => {
+    let subdomain = window.location.hostname.split(".");;
     
     const [indconlogo,setIndconlogo] = useState(null)
     useEffect(() => {
+      console.log(subdomain)
+      
       localStorage.getItem('theme') == 'dark' && document.querySelector('html').classList.add('dark-theme')
       localStorage.getItem('theme') == 'dark' ? setIndconlogo(images_url+'navbar images/indcon logo dark.png') : setIndconlogo(images_url+'navbar images/indcon logo.png')
     },[])
@@ -49,7 +53,7 @@ function App() {
         <div className="ps-md-5 pe-md-5" style={{ backgroundColor: 'var(--brand-light-col)',position:'relative' }}>
           <Routes>
             <Route path="/" element={<NavbarCarousel />} />
-            <Route path="/about" element={<About />} />
+            {subdomain[0] == 'sigma' ? <Route path="/about" element={<CegAbt />} /> : <Route path="/about" element={<About />} /> }
             <Route path="/events" element={<PreEvents />} />
             <Route path="/team" element={<Team />} />
             <Route path="/gallery" element={<Gallery />} />
