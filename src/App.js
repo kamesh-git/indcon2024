@@ -41,7 +41,6 @@ function App() {
     
     const [indconlogo,setIndconlogo] = useState(null)
     useEffect(() => {
-      console.log(subdomain)
       
       localStorage.getItem('theme') == 'dark' && document.querySelector('html').classList.add('dark-theme')
       localStorage.getItem('theme') == 'dark' ? setIndconlogo(images_url+'navbar images/indcon logo dark.png') : setIndconlogo(images_url+'navbar images/indcon logo.png')
