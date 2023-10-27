@@ -31,7 +31,6 @@ const Resources = () => {
     if (res) { }
     else if (folders.length === 0) res = <Alert style={{ width: '250px', textAlign: "center" }} variant="warning">No item in the folder</Alert>;
     else {
-      setTitle(parent.querySelector("title").textContent);
       res = folders.map((item, index) => {
         const gid = item.getAttribute("id").replace("entry-", "");
         const img = item.querySelector("img");
@@ -75,6 +74,7 @@ const Resources = () => {
 
     setloading(true);
     setHtmlRes(res);
+    setTitle(parent.querySelector("title").textContent);
   }
 
   useEffect(() => {

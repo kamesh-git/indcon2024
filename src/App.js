@@ -52,8 +52,8 @@ function App() {
         <div className="ps-md-5 pe-md-5" style={{ backgroundColor: 'var(--brand-light-col)',position:'relative' }}>
           <Routes>
             <Route path="/" element={<NavbarCarousel />} />
-            {subdomain[0] == 'sigma' ? <Route path="/about" element={<CegAbt />} /> : <Route path="/about" element={<About />} /> }
-            <Route path="/events" element={<PreEvents />} />
+            <Route path="/sympo" element={<About />} />
+            <Route path="/activities" element={<PreEvents />} />
             <Route path="/team" element={<Team />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/resources" element={<Resources />} />
