@@ -98,7 +98,7 @@ const Resources = () => {
           </div>
         ))}
       </div>
-      <div className="m-2">
+      <div className="mt-2 ms-2 me-2">
         {loading ? (
           <>
             {title &&

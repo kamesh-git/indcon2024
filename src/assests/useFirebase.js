@@ -4,13 +4,12 @@ import { getFirestore  } from 'firebase/firestore'
 
 const useFirebase = () => {
   const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FireBaseApi,
-    authDomain: "cofee-shop-86518.firebaseapp.com",
-    projectId: "cofee-shop-86518",
-    storageBucket: "cofee-shop-86518.appspot.com",
-    messagingSenderId: "430175212823",
-    appId: "1:430175212823:web:2f2dd08054dd1c4bcfd352",
-    measurementId: "G-CSB4PEW6QC"
+    apiKey: "AIzaSyCc5z9p1l2u7CEIrtee9FVhAKW90oCAID8",
+    authDomain: "indcon-website.firebaseapp.com",
+    projectId: "indcon-website",
+    storageBucket: "indcon-website.appspot.com",
+    messagingSenderId: "1029931282838",
+    appId: "1:1029931282838:web:8fee0499c89ce23bf96db7"
   };
     
     
