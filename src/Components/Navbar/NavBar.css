@@ -11,6 +11,11 @@
     width: fit-content;
 }
 
+.dropdown-navlink.show svg{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
 
 .navbar-nav .nav-link::before {
     display: flex;

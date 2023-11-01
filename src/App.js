@@ -21,6 +21,7 @@ const PreEvents = lazy(() => import("./Components/PreEvents"))
 const Notification = lazy(() => import("./Components/Notification"))
 const Team = lazy(() => import("./Components/Team"))
 const Resources = lazy(() => import("./Components/Gdrive/resources"))
+const NewsLetter = lazy(() => import("./Components/NewsLetter"))
 
 
 function App() {
@@ -60,6 +61,8 @@ function App() {
               <Route path="/gallery" element={<Gallery />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/resources/:googId" element={<Resources />} />
+              <Route path="/news" element={<NewsLetter />} />
+              <Route path="/news/:googId" element={<NewsLetter />} />
               <Route path="/notification" element={<Notification />} />
               {/* <Route path="/test/*" element={<Test />} /> */}
               {/* <Route path="/paytm" element={<PaytmPay />} /> */}
@@ -67,6 +70,7 @@ function App() {
             </Routes>
           </div>
         </Suspense>
+        <ScrollTopBtn />
         <Footer />
       </ContextProvider.Provider>
     )
@@ -80,7 +84,6 @@ function App() {
             <Route path="/*" element={<NavFooterComp />} />
             <Route path="/admin/*" element={<Admin />} />
           </Routes>
-          <ScrollTopBtn />
         </>}
 
     </div>

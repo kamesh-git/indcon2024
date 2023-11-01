@@ -16,7 +16,7 @@ const mdParser = new MarkdownIt(/* Markdown-it options */);
 
 
 // Finish!
-const MonthlyNews = () => {
+const Notification = () => {
   const { db } = useFirebase()
   const [newsData, setNewsData] = useState({ html: '', text: '' })
   const [title, setTitle] = useState('')
@@ -42,7 +42,9 @@ const MonthlyNews = () => {
     else return;
   }
   const handleDelete = (ref) => {
-      deleteDoc(ref);
+    if(window.confirm('Do you really want to delete this notification? \n(this action can\'t be undone)')){
+      deleteDoc(ref).then(alert("Deleted successfully"));
+    }
   }
   return (
     <div className='ps-3 pe-3'>
@@ -54,7 +56,7 @@ const MonthlyNews = () => {
           // console.log(item.ref);
           return <Alert className='d-flex justify-content-between' variant='info'>
             <p>{item.data().title}</p>
-            <Button onClick={() => handleDelete(item.ref)}>Delete</Button>
+            <Button variant='danger' onClick={() => handleDelete(item.ref)}>Delete</Button>
           </Alert>
         })}
       </div>
@@ -64,4 +66,4 @@ const MonthlyNews = () => {
   );
 };
 
-export default MonthlyNews
+export default Notification
