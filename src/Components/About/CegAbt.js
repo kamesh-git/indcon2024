@@ -8,7 +8,7 @@ const CegAbt = () => {
 		<>
 			<div className="container-fluid padding mb-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="500">
 					<div className="row">
-						<HeadingComp head={'Department of Industrial Engineering (DOIE)'} />
+						<HeadingComp head={'Department of Industrial Engineering (DoIE)'} />
 					</div>
 				<div style={{background:'transparent'}} className="card pb-3">
 					<div className="row align-items-center g-0">

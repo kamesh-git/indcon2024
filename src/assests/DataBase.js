@@ -80,12 +80,12 @@ const team_indcon = [
     {
         roll: 13,
         Name: "Ms.PRANEETHA V",
-        Designation: "BEACON"
+        Designation: "EDITORIAL BOARD"
     },
     {
         roll: 20,
         Name: "Ms.SREE SUNDHARII SAKTHEVELAN",
-        Designation: "BEACON"
+        Designation: "EDITORIAL BOARD"
     },
     {
         roll: 3,
