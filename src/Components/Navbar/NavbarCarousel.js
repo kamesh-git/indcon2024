@@ -9,7 +9,7 @@ const NavbarCarousel = () => {
         <>
             <div id='HomeScroll' style={{ position:'relative' }}>
                 <Carousel data-aos="fade-up" data-aos-offset="100" data-aos-delay="200" data-aos-duration="500">
-                    {[3, 2, 1, 5, 6, 7, 10, 8, 9, 4, 11].map((item, index) => {
+                    {[...Array(10).keys()].map((item, index) => {
                         return (
                             <Carousel.Item style={{ backgroundColor: 'black' }} key={`slide${item + 1}`}>
                                 <img

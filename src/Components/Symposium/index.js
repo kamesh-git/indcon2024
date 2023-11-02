@@ -1,12 +1,12 @@
 import React from 'react'
-import CegAbt from './CegAbt'
-import SieAbt from './SieAbt'
+import SigmaAbt from './SigmaAbt'
+import IndconAbt from './IndconAbt'
 
 const About = () => {
   return (
     <div id='AboutScroll' style={{ backgroundColor: 'var(--brand-light-col)' }}>
-    <CegAbt />
-    <SieAbt />
+    <SigmaAbt />
+    <IndconAbt />
     </div>
   )
 }

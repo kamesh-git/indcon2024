@@ -1,130 +1,66 @@
-const preEventsDataBase = [
-    {
-        eventName: 'Paper Presentation',
-        eventDesc: `This traditional event gives students the opportunity to present their latest research, ideas and findings on the most trending theme of the time. The event aims to improve coordination and accuracy while also increasing focus, preparatory and presentation skills. The authors are invited to submit their extended abstracts of original unpublished work. The length of the paper should not exceed 10,000 words and the extended abstract should not exceed 700 words. Plagiarism report should be submitted along with the papers. Plagiarism should not exceed 7%. The extended abstracts are to be sent via e-mail only to 'sieofficial23@gmail.com' . Full papers should be submitted only after the acceptance of extended abstracts. All the papers submitted will be blind reviewed by a committee of experts.`,
-        eventOneLine: `Papers presented in the Symposium will be evaluated
-        by the team of faculty members and industry experts.
-        Best papers that are presented will be given Cash
-        Awards and Certificates.`,
-        eventCost: 'free',
-        eventContactMail: 'mail',
-        eventContactNumber: 'Number',
-        deadline: '31/03/2023',
-        date: '12/04/2023',
-        brochure: "https://drive.google.com/file/d/1ShRuse25IY5_c4H4BxtbwKp5FPFtqO2f/preview",
-        collection: 'paper presentation',
-        time1: '10.00am - 3.00pm',
-        day: '12/04/2023',
+// const preEventsDataBase = [
+//     {
+//         eventName: 'MAD ADS',
+//         eventDesc: `Teams will be given a product, they have to create a script for the ad and they have to take an ad within the time limit in a camera and need to send the video.
+//         The Ads will be evaluated by the judges and prize will be given to the best Ad among them.`,
+//         eventCost: 'free',
+//         eventContactMail: 'mail',
+//         eventContactNumber: 'Number',
+//         deadline: '31/03/2023',
+//         date: '04/11/2023',
+//         brochure: "https://drive.google.com/file/d/1ShRuse25IY5_c4H4BxtbwKp5FPFtqO2f/preview",
+//         collection: 'paper presentation',
+//         time1: '10.00am - 3.00pm',
+//         day: '04/11/2023',
 
-    },
-    {
-        eventName: 'Project display',
-        eventDesc: `Project display is the platform which helps to unleash the potential of our students.The objective of this event is to provide platform and encourage the students to exhibit their innovative ideas in the form of working models, prototypes etc.
-        General Rules and Guidelines for expo:
+//     },
+//     {
+//         eventName: 'Project display',
+//         eventDesc: `Project display is the platform which helps to unleash the potential of our students.The objective of this event is to provide platform and encourage the students to exhibit their innovative ideas in the form of working models, prototypes etc.
+//         General Rules and Guidelines for expo:
 
-1.Each team can have maximum of 1-4 members.
+// 1.Each team can have maximum of 1-4 members.
 
-2.Any engineering student from any discipline can submit their ideas.
+// 2.Any engineering student from any discipline can submit their ideas.
 
-3.The competition is open to only undergraduate and postgraduate students.
+// 3.The competition is open to only undergraduate and postgraduate students.
 
-4.Members should have a valid student ID card of their college.
+// 4.Members should have a valid student ID card of their college.
 
-5.Multiple project ideas can be submitted, the best ones will be filtered out.
+// 5.Multiple project ideas can be submitted, the best ones will be filtered out.
 
-Important note:
-1.It should be fully working module.
+// Important note:
+// 1.It should be fully working module.
 
-2.All selected participants will receive participation certificate.
+// 2.All selected participants will receive participation certificate.
 
-3.Participants should bring all their requirements to execute their project.
+// 3.Participants should bring all their requirements to execute their project.
 
-Selection Criteria:
-1.Innovation.
+// Selection Criteria:
+// 1.Innovation.
 
-2.Design (Compactness and the efficiency of work done).
+// 2.Design (Compactness and the efficiency of work done).
 
-3.Efficiency (Performance of said task).
+// 3.Efficiency (Performance of said task).
 
-4.Relevance with practical need.`,
+// 4.Relevance with practical need.`,
 
 
 
-        eventOneLine: `Project display is the platform which helps to unleash the potential of our students.The objective of this event is to provide platform and encourage the students to exhibit their innovative ideas in the form of working models, prototypes etc.`,
-        eventCost: 'free',
-        eventContactMail: 'mail',
-        eventContactNumber: 'Number',
-        deadline: '05/04/2023',
-        date: '12/04/2023',
-        collection: 'Project display',
-        posters: ['/events/project display/', 3],
-        time1: '10.00am - 3.00pm',
-        day: '12/04/2023',
+//         eventOneLine: `Project display is the platform which helps to unleash the potential of our students.The objective of this event is to provide platform and encourage the students to exhibit their innovative ideas in the form of working models, prototypes etc.`,
+//         eventCost: 'free',
+//         eventContactMail: 'mail',
+//         eventContactNumber: 'Number',
+//         deadline: '05/04/2023',
+//         date: '04/11/2023',
+//         collection: 'Project display',
+//         posters: ['/events/project display/', 3],
+//         time1: '10.00am - 3.00pm',
+//         day: '04/11/2023',
 
 
-    },
-]
-const preEventsDataBaseDummy = [
-    {
-        eventName: 'Flashmob',
-        eventDesc: 'Flashmob',
-        eventCost: 'free',
-        eventContactMail: 'mail',
-        eventContactNumber: 'Number',
-    },
-    {
-        eventName: 'Marathon',
-        eventDesc: 'Marathon',
-        eventCost: 'free',
-        eventContactMail: 'mail',
-        eventContactNumber: 'Number',
-    },
-    {
-        eventName: 'Talentina',
-        eventDesc: 'Talentina',
-        eventCost: 'free',
-        eventContactMail: 'mail',
-        eventContactNumber: 'Number',
-    },
-    {
-        eventName: 'Fire safety demo',
-        eventDesc: 'Fire safety demo',
-        eventCost: 'free',
-        eventContactMail: 'mail',
-        eventContactNumber: 'Number',
-    },
-]
-
-const template = {
-    eventName: '',
-    eventDesc: ``,
-    eventOneLine: ``,
-    eventCost: '',
-    eventContactMail: '',
-    eventContactNumber: '',
-    deadline: '',
-    date: '',
-    brochure: "",
-    collection: ''
-}
-
-const onlineEventsDatabase = [
-    {
-        eventName: 'Poster Play',
-        eventOneLine: `Design a poster on any of the following social issues
-
-        Digital literacy, Gender Equality, Sustainable living, Nuclear disarmament, Zero Hunger, Obesity, No smoking, Alcohol -injurious to health, Blood donation, Suicide prevention
-`,
-        deadline: '07/04/2023'
-    },
-    {
-        eventName: 'Reels contest',
-        eventOneLine: `Theme : ' Dance and Dialogue'
-        Dance, the movement of the body in a rhythmic way, usually to music and within a given space, for the purpose of expressing an idea or emotion releasing energy, or simply taking delight in the movement itself.                
-        `,
-        deadline: '07/04/2023'
-    },
-]
+//     },
+// ]
 const fieldEventsDatabase = [
     {
         eventName: 'SIE Trophy',
@@ -147,82 +83,115 @@ const fieldEventsDatabase = [
         For women only`,
     },
 ]
+
+
+const template = {
+    eventName: '',
+    eventDesc: ``,
+    eventOneLine: ``,
+    eventCost: '',
+    eventContactMail: '',
+    eventContactNumber: '',
+    deadline: '',
+    date: '',
+    brochure: "",
+    collection: ''
+}
+const preEventsDataBase = [
+    {
+        eventName: 'MAD ADS',
+        eventOneLine: `Teams will be given a product, they have to create a script for the ad and they have to take an ad within the time limit in a camera and need to send the video.
+        The Ads will be evaluated by the judges and prize will be given to the best Ad among them.`,
+        deadline: '02/11/2023'
+    },
+]
+
+const onlineEventsDatabase = [
+    {
+        eventName: 'Photography',
+        eventOneLine: `📸Freeze the time and create everlasting moments📸
+        ✨ Participate in the SIGMA'23 Photography Contest and let your lens tell the story!🖼✨ Gear up to capture the extraordinary and unleash your creativity.💥
+        
+        Make sure you read the rules in the google form provided.
+        
+        Submission link: https://forms.gle/CCfTDgkMChjR4mud6 `,
+        deadline: '02/11/2023'
+    },
+    {
+        eventName: 'Mad Ads',
+        eventOneLine: `🚀 Ignite your marketing genius in the SIGMA'23 Mad Ads competition for a one-of-a-kind experience! 🌟 This is your moment to flaunt your skills and embrace the challenge. Be ready to be part of the excitement! 💥
+
+        Make sure you read the rules in the google form provided before submission.
+        
+        Submission Link: https://forms.gle/5P4wdcW8M2vKYxkL6 `,
+        deadline: '02/11/2023'
+    },
+]
+
 const techEventsDatabase = [
     {
-        eventName: `Word Ventures`,
-        eventOneLine: `The event intends to build public speaking skills and spontaneity in students. It also checks their level of technical and general knowledge. `,
-        time1: '09.30am - 12.00pm',
-        time2: '1.30pm-3.00pm',
-        day: '12/04/2023',
+        eventName: `TREE HUNT`,
+        eventOneLine: `Tree hunt event, a treasure hunt with a twist! It's all about connecting the dots navigating through our college and unlocking the path to treasure. Be ready to race against the clock to unearth the ultimate prize.
+
+        Join us for an unforgettable treasure hunt experience where connecting the nodes will lead you to victory. Are you ready to accept the challenge and embark on this thrilling journey? See you all at Optimus hall, DoIE! 🔍🏙`,
+        time1: '1.30P.M-3.00P.M',
+        day: '04/11/2023',
     },
     {
-        eventName: `Rookie Genius`,
-        eventOneLine: `Pen & Paper event on trending technology, current affairs, market scenario and engineering will be presented to the player in three sections— crosswords / fact or not / guesstimate.`,
-        time1: '09.30am - 12.00pm',
-        time2: '02.00pm-04.00pm',
-        day: '12/04/2023',
+        eventName: `CHAIN MASTER`,
+        eventOneLine: `An Event which grows the knowledge on supplychain and the massive network behind it 
+        
+        Join us to witness the unlimited joy with knowledge`,
+        time1: '9.00A.M-10.30A.M',
+        time2: '11.30A.M-12.30P.M',
+        day: '04/11/2023',
     },
     {
-        eventName: `Stock bazaar`,
-        eventOneLine: `To maximise return on investment, prudently invest the provided funds in the greatest way feasible. Portfolio diversification for risk management will also receive weighting in the evaluation. Use the information that is readily available to the public from a variety of sources, such as the company website and financial reports. For your investments, use technical and fundamental analysis skills carefully.`,
-        time1: '10.00am - 03.30pm',
-        day: '13/04/2023',
-    },
-    {
-        eventName: `Market Philia`,
-        eventOneLine: `The event is intended to improve the marketing knowledge and skills (communication and creativity, etc) of the participants.`,
-        time1: '10.00am - 12.00pm',
-        time2: '1.30pm-3.00pm',
-        day: '13/04/2023',
-    },
-    {
-        eventName: `Innovate`,
-        eventOneLine: `The event focuses on cultivating creative thinking in the students.`,
-        time1: '09.00am - 12.00pm',
-        time2: '01.30pm-03.00pm',
-        day: '13/04/2023',
+        eventName: `Recycle Mania`,
+        eventOneLine: `🗑Trash into Treasure🪙
+        "Waste symbolises Useless", does it??
+        It's your turn to roll the 🎲 and change the old perception. 
+        
+        We invite you all to put forth your creativity in making what was never made before.
+        
+        Make sure you register and  go through the guidelines for your participation in the google form provided 👇
+        
+         Gform link : https://docs.google.com/forms/d/e/1FAIpQLSe_CFh8tLG_RAymUy9BPBE-P5b0JBOHGHFKJocbMEMOI31M5Q/viewform?usp=sf_link`,
+        time1: '10.00A.M-12.00P.M',
+        day: '04/11/2023',
     },
 ]
 
 const nonTechEventsDatabase = [
     {
-        eventName: `Save the egg`,
-        eventOneLine: `The participants' task is to create a model out of the provided egg and predetermined materials that will withstand being dropped from a height without breaking.  The participants' creativity, teamwork and time management will all be improved by this event.`,
-        time1: '09.30am - 12.15pm',
-        time2: '01.30pm-04.00pm',
-        day: '12/04/2023',
+        eventName: `SOUND WARS`,
+        eventOneLine: `🔊Get ready for a battle of wits and a harmonious clash of music knowledge at  "Sound Wars," 🎧the ultimate music question and answer event! Whether you're a music connoisseur or simply looking to challenge your musical expertise🔥, this event is the stage where your passion for music will shine💥
+
+        #🫂Gather your music-loving friends and get ready to engage in a thrilling musical battle of wits at Sound Wars
+        
+        #✨Discover new facts about your favorite artists, and, most importantly, have a blast in this  high-energy Q&A event`,
+        time1: '10.00P.M-12.00P.M',
+        time2: '1.15P.M-2.00P.M',
+        day: '04/11/2023',
     },
     {
-        eventName: `FIT Fest`,
-        eventOneLine: `Physical fitness tests (both skill and health based tests) and participants who fall under excellent category according to norms get gift hampers! `,
-        time1: '04.00pm - 06.00pm',
-        day: '12/04/2023',
+        eventName: `Memory Game`,
+        eventOneLine: `🎮 Join us for a Mind-Boggling Experience! 🧠
+        
+        Get ready to put your memory to the test at the most exciting event of SIGMA '23! 🤯
+        
+        🧩 Challenge your memory with various brain-teasers and puzzles.
+        🏆 Win amazing prizes and bragging rights as the Memory Master!
+        💡 Enhance your cognitive skills and mental agility.
+        
+        Don't miss out on the fun! Invite your friends and be part of the brainiest showdown this year! 🤓
+        
+        `,
+        time1: '9.30A.M-11.00A.M',
+        time2:"11.30A.M-12.30P.M",
+        day: '04/11/2023',
     },
-    {
-        eventName: `Mime Time`,
-        eventOneLine: `Mime Time is a performance art form in which the performer uses body movements, facial expressions, and gestures to convey a story or message without the use of words or props.`,
-        time1: '09.30am - 12.00pm',
-        day: '13/04/2023',
-    },
-    {
-        eventName: `IPL Auction`,
-        eventOneLine: `IPL Auction is a fun event for all those Cricket fans out there! This event judges the participants’ Cricket knowledge through sweat-breaking rounds.`,
-        time1: '02.00pm - 04.00pm',
-        time2: '10.00pm-12.00pm',
-        day: '12/04/2023 & 13/04/2023',
-    },
-    {
-        eventName: `Fun zone`,
-        eventOneLine: `A collection of mini fun events!`,
-        time1: '10.00am - 03.00pm',
-        day: '12/04/2023 & 13/04/2023',
-    },
-    {
-        eventName: `Bomb b’o’ard`,
-        eventOneLine: `This event is organized, for fun and interaction between friends.`,
-        time1: '10.00am - 03.00pm',
-        day: '12/04/2023 & 13/04/2023',
-    },
+
 ]
 
 

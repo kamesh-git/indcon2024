@@ -2,11 +2,8 @@ import React from 'react'
 import './FooterMap.css'
 import { images_url } from '../../assests/DataBase'
 import HeadingComp from '../Others/HeadingComp'
-import { useContext } from 'react'
-import ContextProvider from '../../assests/Contextprovider'
 
 const FooterMap = () => {
-    const {indconlogo,setIndconlogo} = useContext(ContextProvider)
     return (
         <footer>
             <HeadingComp head={'Reach us at'} />
@@ -14,12 +11,12 @@ const FooterMap = () => {
                 <div className="row text-center">
                     <div className="col-lg-3 pt-0">
                         <div className="footer-image">
-                            <img alt='loading...' src={indconlogo} style={{ width: '150px', height: '150px' }}></img>
+                            <img alt='loading...' src={images_url+"navbar images/sielogo.png"} style={{ width: '150px', height: '150px' }}></img>
                         </div>
                         <hr className="light"></hr>
-                        <p><a href="mailto:sieofficial24@gmail.com">sieofficial24@gmail.com</a></p>
-                        <p>I Jaikanth: <a href="tel:+919345456525">+919345456525</a></p>
-                        <p>Shneha Puviarasan: <a href="tel:+919499953603">+919499953603</a></p>
+                        <p><a href="mailto:sieofficial24@gmail.com">sieofficial.doie@gmail.com</a></p>
+                        <p>Mr.I.Jaikanth: <a href="tel:+919345456525">+919345456525</a></p>
+                        <p>Ms.Shneha Puviarasan: <a href="tel:+919499953603">+919499953603</a></p>
                     </div>
                     <div className="col-lg-5 p-0 d-flex justify-content-center align-items-center">
                         <div className="container-fluid padding">

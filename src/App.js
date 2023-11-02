@@ -15,6 +15,7 @@ import LoadSpinner from "./Components/Loading/LoadSpinner";
 import Admin from "./Components/Admin";
 
 const About = lazy(() => import("./Components/About"))
+const Symposium = lazy(() => import("./Components/Symposium"))
 const NavbarCarousel = lazy(() => import("./Components/Navbar/NavbarCarousel"))
 const Gallery = lazy(() => import("./Components/Gallery"))
 const PreEvents = lazy(() => import("./Components/PreEvents"))
@@ -55,7 +56,7 @@ function App() {
           <div className="ps-md-5 pe-md-5" style={{ backgroundColor: 'var(--brand-light-col)', position: 'relative' }}>
             <Routes>
               <Route path="/" element={<NavbarCarousel />} />
-              <Route path="/sympo" element={<About />} />
+              <Route path="/sympo" element={<Symposium />} />
               <Route path="/events" element={<PreEvents />} />
               <Route path="/team" element={<Team />} />
               <Route path="/gallery" element={<Gallery />} />

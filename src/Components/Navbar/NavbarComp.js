@@ -62,7 +62,7 @@ const NavbarComp = () => {
                             <Nav className="ms-auto ps-4">
                                 <NavLink onClick={closeNavbar} className='nav-link text-center' to={'/'}>Home</NavLink>
                                 <NavLink onClick={closeNavbar} className='nav-link' to={'/sympo'}>Symposium</NavLink>
-                                <Dropdown className='dropdown-navlink'>
+                                {/* <Dropdown className='dropdown-navlink'>
                                     <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
                                         <span>Activities</span> <svg style={{ margin: "auto",fill:'var(--font-color)',paddingLeft:'2px' }} xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" /></svg>
                                     </Dropdown.Toggle>
@@ -72,9 +72,9 @@ const NavbarComp = () => {
                                         <NavLink onClick={closeNavbar} className='nav-link' to={'/gallery'}>Gallery</NavLink>
                                         <NavLink onClick={closeNavbar} className='nav-link' to={'/resources'}>Resources</NavLink>
                                     </Dropdown.Menu>
-                                </Dropdown>
-                                {/* <NavLink onClick={closeNavbar} className='nav-link' to={'/activities'}>Activities</NavLink> */}
+                                </Dropdown> */}
                                 <NavLink onClick={closeNavbar} className='nav-link' to={'/team'}>Team</NavLink>
+                                <NavLink onClick={closeNavbar} className='nav-link' to={'/events'}>Events</NavLink>
                                 <NavLink onClick={closeNavbar} className='nav-link' to={'/gallery'}>Gallery</NavLink>
                                 <NavLink onClick={closeNavbar} className='nav-link' to={'/resources'}>Resources</NavLink>
                                 <div className='d-flex'>

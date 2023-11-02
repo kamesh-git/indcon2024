@@ -13,10 +13,10 @@ const NavCssTyping = () => {
         setchangeText('Society of Industrial Engineers')
       }, 0);
       setTimeout(() => {
-        setchangeText('INDCON 2024...')
+        setchangeText('Department of Industrial Engineering')
       }, 6000);
       setTimeout(() => {
-        setchangeText('National level Technical Symposium')
+        setchangeText('Anna University')
       }, 12000);
     }
 

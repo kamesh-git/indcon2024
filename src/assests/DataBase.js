@@ -1,120 +1,120 @@
 const team_indcon = [
     {
         roll: 9,
-        Name: "JAIKANTH I",
+        Name: "Mr.I.JAIKANTH",
         Designation: "GENERAL SECRETARY"
     },
     {
         roll: 17,
-        Name: "SHNEHA P",
+        Name: "Ms.SHNEHA P",
         Designation: "LADY GENERAL SECRETARY"
     },
     {
         roll: 10,
-        Name: "JAYAKRISHNAN R",
+        Name: "Mr.JAYAKRISHNAN R",
         Designation: "STUDENT TREASURER"
     },
     {
         roll: 24,
-        Name: "KRITHIKA G",
+        Name: "Ms.KRITHIKA G",
         Designation: "JOINT SECRETARY",
         tag:'orange',
     },
     {
         roll: 25,
-        Name: "NARAYANAN AL",
+        Name: "Mr.NARAYANAN AL",
         Designation: "JOINT SECRETARY",
         tag:'purple',
     },
     {
         roll: 26,
-        Name: "RISI BALAN KG",
+        Name: "Mr.RISI BALAN KG",
         Designation: "JOINT SECRETARY",
         tag:'darkgreen',
     },
     {
         roll: 14,
-        Name: "RAJ KUMAR K",
+        Name: "Mr.RAJ KUMAR K",
         Designation: "ALUMNI RELATIONS",
     },
     {
         roll: 4,
-        Name: "Mr. ARAVINDH KUMAR R",
+        Name: "Mr.ARAVINDH KUMAR R",
         Designation: "EXTRA-CURRICULAR ACTIVITIES"
     },
     {
         roll: 2,
-        Name: "Aishvarya Lakshmi G S",
+        Name: "Ms.Aishvarya Lakshmi G S",
         Designation: "CAREER GUIDANCE"
     },
     {
         roll: 6,
-        Name: "DHARSHINI R",
+        Name: "Ms.DHARSHINI R",
         Designation: "CAREER GUIDANCE"
     },
     {
         roll: 11,
-        Name: "Kamesh A",
+        Name: "Mr.Kamesh A",
         Designation: "EVENTS"
     },
     {
         roll: 22,
-        Name: "S. Viswanath",
+        Name: "Mr.S. Viswanath",
         Designation: "EVENTS"
     },
     {
         roll: 1,
-        Name: "Aadityan S",
+        Name: "Mr.Aadityan S",
         Designation: "DESIGN"
     },
     {
         roll: 16,
-        Name: "Sarathi R",
+        Name: "Mr.Sarathi R",
         Designation: "DESIGN"
     },
     {
         roll: 19,
-        Name: "Soumya Ranjan Sethi",
+        Name: "Mr.Soumya Ranjan Sethi",
         Designation: "MARKETING"
     },
     {
         roll: 13,
-        Name: "PRANEETHA V",
+        Name: "Ms.PRANEETHA V",
         Designation: "BEACON"
     },
     {
         roll: 20,
-        Name: "SREE SUNDHARII SAKTHEVELAN",
+        Name: "Ms.SREE SUNDHARII SAKTHEVELAN",
         Designation: "BEACON"
     },
     {
         roll: 3,
-        Name: "Aravinda Lochanan KST",
+        Name: "Mr.Aravinda Lochanan KST",
         Designation: "LOGISTICS"
     },
     {
         roll: 15,
-        Name: "SanthoshKumar S",
+        Name: "Mr.SanthoshKumar S",
         Designation: "5S IN-CHARGE"
     },
     {
         roll: 5,
-        Name: "ARUN KALYANARAMAN R",
+        Name: "Mr.ARUN KALYANARAMAN R",
         Designation: "HUMAN RESOURCE"
     },
     {
         roll: 8,
-        Name: "R.Harshene",
+        Name: "Ms.R.Harshene",
         Designation: "CONTENT & DOCUMENTATION"
     },
     {
         roll: 23,
-        Name: "SIVA SANKAR RAJA K",
+        Name: "Mr.SIVA SANKAR RAJA K",
         Designation: "SOCIAL MEDIA"
     },
     {
         roll: 21,
-        Name: "Tisha N",
+        Name: "Ms.Tisha N",
         Designation: "SOCIAL MEDIA"
     },
 ]
