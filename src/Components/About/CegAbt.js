@@ -13,7 +13,7 @@ const CegAbt = () => {
 				<div style={{background:'transparent'}} className="card pb-3">
 					<div className="row align-items-center g-0">
 						<div className="col-lg-4">
-							<img src={images_url+"navbar images/doie building.png"} className="img-fluid rounded-start" alt="..."></img>
+							<img src={images_url+"navbar images/doielogo.png"} className="img-fluid rounded-start" alt="..."></img>
 						</div>
 						<div className="col-lg-8">
 							<div style={{textAlign:'justify'}} className="card-body">
