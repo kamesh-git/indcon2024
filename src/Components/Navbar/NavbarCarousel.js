@@ -15,7 +15,7 @@ const NavbarCarousel = () => {
                                 <img
                                     style={{ filter: 'opacity(0.7)', width: '50vw' }}
                                     className="d-block w-100"
-                                    src={images_url + `gallery indcon/1 (${item}).jpeg`}
+                                    src={images_url + `gallery indcon/1 (${item + 1}).jpeg`}
                                     alt="First slide"
                                 />
                             </Carousel.Item>
