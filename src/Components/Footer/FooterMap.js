@@ -14,7 +14,7 @@ const FooterMap = () => {
                             <img alt='loading...' src={images_url+"navbar images/sielogo.png"} style={{ width: '150px', height: '150px' }}></img>
                         </div>
                         <hr className="light"></hr>
-                        <p><a href="mailto:sieofficial24@gmail.com">sieofficial.doie@gmail.com</a></p>
+                        <p><a href="mailto:sieofficial.doie@gmail.com">sieofficial.doie@gmail.com</a></p>
                         <p>Mr.I.Jaikanth: <a href="tel:+919345456525">+919345456525</a></p>
                         <p>Ms.Shneha Puviarasan: <a href="tel:+919499953603">+919499953603</a></p>
                     </div>
@@ -22,7 +22,7 @@ const FooterMap = () => {
                         <div className="container-fluid padding">
                             <div className="row text-center padding">
                                 <div className="col-12 social padding" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="500">
-                                    <a className='p-xl-5 p-lg-4 p-4' target='_blank' rel="noreferrer" href="mailto:sieofficial24@gmail.com"><img height={63} src={images_url + 'navbar images/gmail.jpeg'} alt="" srcSet="" /></a>
+                                    <a className='p-xl-5 p-lg-4 p-4' target='_blank' rel="noreferrer" href="mailto:sieofficial.doie@gmail.com"><img height={63} src={images_url + 'navbar images/gmail.jpeg'} alt="" srcSet="" /></a>
                                     <a className='p-xl-5 p-lg-4 p-4' target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/society-of-industrial-engineers-sie-6805b9281/"><img height={63} src={images_url + 'navbar images/linkedin.jpeg'} alt="" srcSet="" /></a>
                                     <a className='p-xl-5 p-lg-4 p-4' target='_blank' rel="noreferrer" href="https://www.instagram.com/sie_ceg">
                                         <img height={63} src={images_url + 'navbar images/instagram.jpeg'} alt="" srcSet="" />
