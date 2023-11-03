@@ -33,7 +33,7 @@ const Admin = () => {
   return (
     <>
       <div className="mt-5 mb-5 ms-2">
-        <NavLink className={'col-1 me-1'} to='/admin'><Button variant='primary'>Events</Button></NavLink>
+        {/* <NavLink className={'col-1 me-1'} to='/admin'><Button variant='primary'>Events</Button></NavLink> */}
         <NavLink className={'col-1 me-1'} to='/admin/notification'><Button variant='primary '>Notification</Button></NavLink>
         <NavLink className={'col-1 me-1'} to='/'><Button variant='dark'>Home</Button></NavLink>
         <NavLink className={'col-1 me-1'} to='/'><Button onClick={() => signOut(auth)} variant='danger'>Logout</Button></NavLink>
@@ -41,7 +41,7 @@ const Admin = () => {
       {isSignedIn ?
         <>
         <Routes>
-          <Route path='/' element={<Panel />} />
+          <Route path='/' element={<AdminContent role={'admin'} />} />
           <Route path='/notification' element={<AdminContent role={'admin'} />} />
         </Routes>
         </>
