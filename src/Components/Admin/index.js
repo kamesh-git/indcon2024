@@ -38,7 +38,7 @@ const Admin = () => {
         <NavLink className={'col-1 me-1'} to='/'><Button variant='dark'>Home</Button></NavLink>
         <NavLink className={'col-1 me-1'} to='/'><Button onClick={() => signOut(auth)} variant='danger'>Logout</Button></NavLink>
       </div>
-      {true ?
+      {isSignedIn ?
         <>
         <Routes>
           <Route path='/' element={<Panel />} />

@@ -52,6 +52,8 @@ const Notification = () => {
       <MdEditor value={newsData.text} renderHTML={text => mdParser.render(text)} style={{ height: '500px' }} onChange={handleEditorChange} />
       <Button onClick={handlePost} variant='danger' className="m-2">Post</Button>
       <div>
+        <hr />
+        <h5>Posted Notifications</h5>
         {notifyDocs.map(item => {
           // console.log(item.ref);
           return <Alert className='d-flex justify-content-between' variant='info'>
