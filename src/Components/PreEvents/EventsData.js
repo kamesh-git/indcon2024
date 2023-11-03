@@ -139,9 +139,10 @@ const techEventsDatabase = [
     },
     {
         eventName: `CHAIN MASTER`,
-        eventOneLine: `An Event which grows the knowledge on supplychain and the massive network behind it 
+        eventOneLine: `Hola!! Amigos,
+        Get ready for an embracing journey into the world of chain masters.🔥 Let you experience the inner supply chain master within you.😎 Battle with others to gain the top spot by thinking, Acting, Running and becoming the “Grand master of Chainworld"🫵
         
-        Join us to witness the unlimited joy with knowledge`,
+        Reach the battle field ☠ on the war day.Mark your calendar on 4 November. Let's fight for the ultimate title `,
         time1: '9.00A.M-10.30A.M',
         time2: '11.30A.M-12.30P.M',
         day: '04/11/2023',
