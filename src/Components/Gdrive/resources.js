@@ -28,7 +28,7 @@ const Resources = () => {
                       if (response.ok) return response.json()
                       throw new Error({message:'Network response was not ok.'})
                     })
-                    .then(data => console.log(data.contents)).catch(err => res = <Alert style={{ width: '200px', textAlign: "center" }} variant="danger">{err.message}</Alert>);
+                    .then(data => data.contents).catch(err => res = <Alert style={{ width: '200px', textAlign: "center" }} variant="danger">{err.message}</Alert>);
     const parent = document.createElement("div");
     parent.innerHTML = html;
     const folders = Array.from(parent.querySelectorAll(".flip-entry"));
