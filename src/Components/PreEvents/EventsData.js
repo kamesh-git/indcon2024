@@ -130,37 +130,25 @@ const onlineEventsDatabase = [
 
 const techEventsDatabase = [
     {
-        eventName: `TREE HUNT`,
-        eventOneLine: `Tree hunt event, a treasure hunt with a twist! It's all about connecting the dots navigating through our college and unlocking the path to treasure. Be ready to race against the clock to unearth the ultimate prize.
+        eventName: `Paper Presentation`,
+        eventOneLine: `
+        The length of the paper should not exceed 10,000 words and the extended abstract should not exceed 700 words. The paper should not have been published in journals or be presented in any other conferences/ workshops/ symposia. Plagiarism report should be submitted along with the full papers. Plagiarism should not exceed 15%. The extended abstracts are to be sent via e-mail only to 'sieofficial.doie@gmail.com'. Full papers should be submitted only after the acceptance of extended abstracts. All the papers submitted will be blind reviewed by a committee of experts.
 
-        Join us for an unforgettable treasure hunt experience where connecting the nodes will lead you to victory. Are you ready to accept the challenge and embark on this thrilling journey? See you all at Optimus hall, DoIE! 🔍🏙`,
+        `,
         time1: '1.30P.M-3.00P.M',
         day: '04/11/2023',
+        register:"https://forms.gle/LSNF3ajQRjaAiMMq8"
     },
-    {
-        eventName: `CHAIN MASTER`,
-        eventOneLine: `Hola!! Amigos,
-        Get ready for an embracing journey into the world of chain masters.🔥 Let you experience the inner supply chain master within you.😎 Battle with others to gain the top spot by thinking, Acting, Running and becoming the “Grand master of Chainworld"🫵
+    // {
+    //     eventName: `CHAIN MASTER`,
+    //     eventOneLine: `Hola!! Amigos,
+    //     Get ready for an embracing journey into the world of chain masters.🔥 Let you experience the inner supply chain master within you.😎 Battle with others to gain the top spot by thinking, Acting, Running and becoming the “Grand master of Chainworld"🫵
         
-        Reach the battle field ☠ on the war day.Mark your calendar on 4 November. Let's fight for the ultimate title `,
-        time1: '9.00A.M-10.30A.M',
-        time2: '11.30A.M-12.30P.M',
-        day: '04/11/2023',
-    },
-    {
-        eventName: `Recycle Mania`,
-        eventOneLine: `🗑Trash into Treasure🪙
-        "Waste symbolises Useless", does it??
-        It's your turn to roll the 🎲 and change the old perception. 
-        
-        We invite you all to put forth your creativity in making what was never made before.
-        
-        Make sure you register and  go through the guidelines for your participation in the google form provided 👇
-        
-         Gform link : https://docs.google.com/forms/d/e/1FAIpQLSe_CFh8tLG_RAymUy9BPBE-P5b0JBOHGHFKJocbMEMOI31M5Q/viewform?usp=sf_link`,
-        time1: '10.00A.M-12.00P.M',
-        day: '04/11/2023',
-    },
+    //     Reach the battle field ☠ on the war day.Mark your calendar on 4 November. Let's fight for the ultimate title `,
+    //     time1: '9.00A.M-10.30A.M',
+    //     time2: '11.30A.M-12.30P.M',
+    //     day: '04/11/2023',
+    // },
 ]
 
 const nonTechEventsDatabase = [

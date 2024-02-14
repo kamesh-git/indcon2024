@@ -18,11 +18,15 @@ const NewsLetter = () => {
         let res
         const uid = window.atob(id)
         const url =
-            "https://corsproxy.io/?" +
+            "https://api.allorigins.win/get?url=" +
             encodeURIComponent(
                 `https://drive.google.com/embeddedfolderview?id=${uid}#list`,
             );
-        const html = await fetch(url).then((resp) => resp.text()).catch(err => res = <Alert style={{ width: '200px', textAlign: "center" }} variant="danger">{err.message}</Alert>);
+        const html = await fetch(url).then(response => {
+                      if (response.ok) return response.json()
+                      throw new Error({message:'Network response was not ok.'})
+                    })
+                    .then(data => data.contents).catch(err => res = <Alert style={{ width: '200px', textAlign: "center" }} variant="danger">{err.message}</Alert>);
         const parent = document.createElement("div");
         parent.innerHTML = html;
         const folders = Array.from(parent.querySelectorAll(".flip-entry"));
