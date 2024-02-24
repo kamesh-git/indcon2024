@@ -135,8 +135,8 @@ const techEventsDatabase = [
         The length of the paper should not exceed 10,000 words and the extended abstract should not exceed 700 words. The paper should not have been published in journals or be presented in any other conferences/ workshops/ symposia. Plagiarism report should be submitted along with the full papers. Plagiarism should not exceed 15%. The extended abstracts are to be sent via e-mail only to 'sieofficial.doie@gmail.com'. Full papers should be submitted only after the acceptance of extended abstracts. All the papers submitted will be blind reviewed by a committee of experts.
 
         `,
-        time1: '1.30P.M-3.00P.M',
-        day: '04/11/2023',
+        time1: '1.30pm',
+        day: '26/03/2024',
         register:"https://forms.gle/LSNF3ajQRjaAiMMq8"
     },
     // {
