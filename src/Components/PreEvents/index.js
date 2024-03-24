@@ -1,16 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import EventCards from '../EventCards.js'
 import CommonCard from '../EventCards.js/CommonCard.js'
 import { preEventsDataBase, onlineEventsDatabase, fieldEventsDatabase, techEventsDatabase, nonTechEventsDatabase } from './EventsData'
 import HeadingComp from '../Others/HeadingComp.js'
+import ContextProvider from '../../assests/Contextprovider.js'
 const PreEvents = () => {
+    const {indconlogo} = useContext(ContextProvider)
+
     return (
         <div id='EventsScroll'>
             <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="500">
                 <div className="row welcome text-center">
                     <div className='d-flex justify-content-center'>
                         <div style={{ width: "5%",margin:"auto 0" }}>
-                            <img style={{ width: "100%", height: "auto" }} src="https://sie-doie.github.io/indcon2024-assets/navbar%20images/indcon%20logo.png" alt="Loading..." />
+                            <img style={{ width: "100%", height: "auto" }} src={indconlogo} alt="Loading..." />
                         </div>
                         <div className={``}>
                             <h5 style={{ color: 'var(--brand-dark-col)' }} className="display-5 text-center p-2">Indcon'24 Events
