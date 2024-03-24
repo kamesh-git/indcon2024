@@ -190,6 +190,19 @@ const techEventsDatabase = [
         // day: '26/03/2024',
         // time2: '11.30A.M-12.30P.M',
     },
+    {
+        eventName: `ReEnginner`,
+        eventOneLine: `
+        Join us as we reEngineer⚙ the future with innovation and passion! Let's construct the world together.
+
+        Let's embrace the power of innovation and creativity at the reEngineer event - where ideas💡 are transformed into groundbreaking solutions! 
+
+        #creativity #innovation
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
+    },
 ]
 
 const nonTechEventsDatabase = [
