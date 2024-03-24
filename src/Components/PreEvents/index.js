@@ -28,7 +28,7 @@ const PreEvents = () => {
             {/* <CommonCard heading={'Field Events'} data={fieldEventsDatabase} /> */}
             {/* <CommonCard heading={'Online Events'} data={onlineEventsDatabase} /> */}
             <CommonCard heading={'Tech Events'} data={techEventsDatabase} />
-            {/* <CommonCard heading={'Non Tech Events'} data={nonTechEventsDatabase} /> */}
+            <CommonCard heading={'Non Tech Events'} data={nonTechEventsDatabase} />
 
         </div>
     )

@@ -137,50 +137,116 @@ const techEventsDatabase = [
         `,
         time1: '1.30pm',
         day: '26/03/2024',
-        register:"https://forms.gle/LSNF3ajQRjaAiMMq8"
+        register:"https://forms.gle/LSNF3ajQRjaAiMMq8",
+        contHeight:"700px",
+        bodyHeight:"450px"
     },
-    // {
-    //     eventName: `CHAIN MASTER`,
-    //     eventOneLine: `Hola!! Amigos,
-    //     Get ready for an embracing journey into the world of chain masters.🔥 Let you experience the inner supply chain master within you.😎 Battle with others to gain the top spot by thinking, Acting, Running and becoming the “Grand master of Chainworld"🫵
+    {
+        eventName: `Quizzical Quest`,
+        eventOneLine: `
+        Embark yourself into the realm of quizzes...! 💫Explore a myriad of challenging questions, test your knowledge, unravel the words and much more🎊
+
+        🎗Get ready to showcase your intellect, engage in friendly competition, and emerge triumphant in this epic quest. Join us, answer questions, and enjoy the excitement together.
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+    },
+    {
+        eventName: `Mind Master`,
+        eventOneLine: `
+        📝 Ready, set, brainstorm! Join us for Mind Master and unleash your team's creativity💡 in a thrilling mind map challenge. Dare to dream, dare to innovate!
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+    },
+    {
+        eventName: `Decision Dilemma`,
+        eventOneLine: `
+        🔍 Ready to tackle tough choices head-on? 🚀 Decision Dilemma beckons with its adrenaline-fueled mix of quick thinking and persuasive prowess. From analyzing scenarios to sealing partnerships, it's all about making the right moves under pressure. Think your team has what it takes to triumph? Join us and let the games begin! 🔥
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+    },
+    {
+        eventName: `Formula Face`,
+        eventOneLine: `
+        📊 Step into the realm of Formula Face at Indcon 24, where exhilarating challenges await and Microsoft Excel is the hero of the day! 📈 Dive into complex problem-solving, demonstrate your analytical skills, and emerge triumphant in this thrilling journey of data-driven conquest! 💻 Come join us, harness Excel's power, and embark on an adventure brimming with excitement and discovery! 🚀
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+    },
+    {
+        eventName: `ML Mania`,
+        eventOneLine: `
+        ⚠Are you prepared to confront the most formidable technology known to mankind? ❌
+        🦾Then seize the chance to delve into the realm of machine learning and 🤖engage in a discourse on the superiority of your prognostications, thereby assessing your true potential.⚡
         
-    //     Reach the battle field ☠ on the war day.Mark your calendar on 4 November. Let's fight for the ultimate title `,
-    //     time1: '9.00A.M-10.30A.M',
-    //     time2: '11.30A.M-12.30P.M',
-    //     day: '04/11/2023',
-    // },
+        "A breakthrough in machine learning would be worth ten Microsoft-Bill Gates."🔥
+        
+        
+        🏆Engage in INDCON's ML MANIA to bolster your confidence through the mastery of problem-solving challenges in the domain of Machine Learning.🧑‍💻
+                `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
+    },
 ]
 
 const nonTechEventsDatabase = [
     {
-        eventName: `SOUND WARS`,
-        eventOneLine: `🔊Get ready for a battle of wits and a harmonious clash of music knowledge at  "Sound Wars," 🎧the ultimate music question and answer event! Whether you're a music connoisseur or simply looking to challenge your musical expertise🔥, this event is the stage where your passion for music will shine💥
-
-        #🫂Gather your music-loving friends and get ready to engage in a thrilling musical battle of wits at Sound Wars
-        
-        #✨Discover new facts about your favorite artists, and, most importantly, have a blast in this  high-energy Q&A event`,
-        time1: '10.00P.M-12.00P.M',
-        time2: '1.15P.M-2.00P.M',
-        day: '04/11/2023',
+        eventName: `IPL Auction`,
+        eventOneLine: `
+        Are you the kind of person who stays up late for IPL matches 🏏 , even if it means sacrificing sleep before a crucial assessment 📝 ? Seize this opportunity to showcase your IPL passion! Join the INDCON's IPL Auction and proudly display your dedication 🧠 among fellow cricket enthusiasts.
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
     },
     {
-        eventName: `Memory Game`,
-        eventOneLine: `🎮 Join us for a Mind-Boggling Experience! 🧠
+        eventName: `Musically Connect`,
+        eventOneLine: `
+        இசை மழையில் நனைய தயாரா !!!!!!! 🎤
+        உங்களுக்காக industrial dept நடத்தும் Musically connect🎺 🧩
         
-        Get ready to put your memory to the test at the most exciting event of SIGMA '23! 🤯
-        
-        🧩 Challenge your memory with various brain-teasers and puzzles.
-        🏆 Win amazing prizes and bragging rights as the Memory Master!
-        💡 Enhance your cognitive skills and mental agility.
-        
-        Don't miss out on the fun! Invite your friends and be part of the brainiest showdown this year! 🤓
-        
-        `,
-        time1: '9.30A.M-11.00A.M',
-        time2:"11.30A.M-12.30P.M",
-        day: '04/11/2023',
+        Certified fun event!!!!
+        Get ready to unwind and have a blast at our fun-filled event! From hilarious games to lively music and everything in between, this is your chance to let loose and make unforgettable memories with your friends🫂.
+            
+         where every note brings us closer together 🎵🎶
+         `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
     },
+    {
+        eventName: `Movie Maze`,
+        eventOneLine: `
+        In the shadowy depths of Movie Mafia's world🎥, whispers of intrigue dance amidst the flickering light. Dare to unravel the mysteries veiled behind the silver screen's facade, where truth and deception intertwine🎬🍿
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
+    },
+    {
+        eventName: `Reflex Riddle`,
+        eventOneLine: `
+        ✨Question: Where fun and thinking collide, in a word game enjoyed far and wide? 🤔
+        Answer: Reflex Riddle 😎
 
+        💫Don't forget to join us for the event!💫
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
+    },
+    {
+        eventName: `Spelllink`,
+        eventOneLine: `
+        Hey there! 🐝✨ Are you a word wizard ready to spell your way to victory? Play our word game, dive into a world of word puzzles  and let your vocabulary sparkle like never before! Embrace the challenge, ignite your imagination, and conquer the world of words. Ready to dazzle?🏆📚 #SpellinkChallenge
+        `,
+        // time1: '1.30pm',
+        // day: '26/03/2024',
+        // time2: '11.30A.M-12.30P.M',
+    },
 ]
 
 

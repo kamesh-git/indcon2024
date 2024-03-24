@@ -1,63 +1,65 @@
 .circle {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    background: transparent;
-    border: 3px solid whitesmoke;
-    color: whitesmoke;
-    text-align: center;
-    font: 32px Arial, sans-serif;
-  }
-.modal-90w{
-    width: 90%;
-    max-width: none!important;
-  }
-  .containerflip {
-      perspective: 2000px;
-      width: 100%;
-  }
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: transparent;
+  border: 3px solid whitesmoke;
+  color: whitesmoke;
+  text-align: center;
+  font: 32px Arial, sans-serif;
+}
 
-  .card {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      transition: transform 1500ms;
-      transform-style: preserve-3d;
-      border: 0;
-  }
+.modal-90w {
+  width: 90%;
+  max-width: none !important;
+}
 
-  div.flip-card {
-      cursor: pointer;
-      transform: rotateY(180deg);
-      -webkit-transform: rotateY(180deg);
-    }
+.containerflip {
+  perspective: 2000px;
+  width: 100%;
+}
 
-    .card-header{
-      border-bottom: 2px solid #6c757d;
-    }
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  border: 0;
+}
 
-.preEvents .card{
+div.flip-card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.card-header {
+  border-bottom: 2px solid #6c757d;
+}
+
+.preEvents .card {
   border-radius: 0.5rem;
   box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
   color: whitesmoke;
-  background: linear-gradient(90deg,#343a40,#1d242a);
+  background: linear-gradient(90deg, #343a40, #1d242a);
 
 }
 
-  .front,
-  .back {
-      height: fit-content;
-      width: 100%;
-      border-radius: 0.5rem;
-      position: absolute;
-      backface-visibility: hidden;
-  }
+.front,
+.back {
+  height: fit-content;
+  width: 100%;
+  border-radius: 0.5rem;
+  position: absolute;
+  backface-visibility: hidden;
+}
 
 
-  .back {
-      text-align: justify;
-      overflow-x: auto;
-      transform: rotateY(180deg);
-      gap: 5rem;
-  }
+.back {
+  text-align: justify;
+  overflow-x: auto;
+  transform: rotateY(180deg);
+  gap: 5rem;
+}

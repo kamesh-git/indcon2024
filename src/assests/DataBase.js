@@ -119,7 +119,7 @@ const team_indcon = [
     },
 ]
 
-const images_url = 'https://Sie-doie.github.io/indcon2024-assets/'
+const images_url = 'https://kamesh-git.github.io/indcon2024-assets/'
 // const images_url = 'images/'
 
 const rs_gdrive = [

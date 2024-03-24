@@ -1,0 +1,40 @@
+.commonEventscard {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  color: whitesmoke;
+  background: linear-gradient(90deg, #343a40, #1d242a);
+  position: relative;
+
+}
+
+.flipcontainer{
+  perspective: 1000px;
+}
+
+.flipcard {
+  transition: 0.5s;
+  transform-style:preserve-3d;
+}
+.flipcontainer:hover > .flipcard{
+  cursor: pointer;
+  transform: rotateY(-180deg);
+  
+}
+.cardbody{
+}
+.flipcard .front,
+.flipcard .back {
+  height: fit-content;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.back {
+  text-align: justify;
+  overflow-x: auto;
+  transform: rotateY(180deg);
+  gap: 5rem;
+}
