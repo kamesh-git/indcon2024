@@ -24,11 +24,12 @@ const Gallery = () => {
   async function setImgs() {
     let result = {};
     const url =
-      "https://corsproxy.io/?" +
+      "https://api.allorigins.win/get?url=" +
       encodeURIComponent(
         `https://drive.google.com/embeddedfolderview?id=${gallery_id}#list`,
       );
-    const html = await fetch(url).then((resp) => resp.text());
+    let html = await fetch(url).then((resp) => resp.json());
+    html = html["contents"]
     const parent = document.createElement("div");
     parent.innerHTML = html;
     const folders = Array.from(parent.querySelectorAll(".flip-entry"));
@@ -40,13 +41,13 @@ const Gallery = () => {
       const name = item.querySelector(".flip-entry-title").innerHTML;
       result[name] = []
       const innerurl =
-        "https://corsproxy.io/?" +
+        "https://api.allorigins.win/get?url=" +
         encodeURIComponent(
           `https://drive.google.com/embeddedfolderview?id=${gid}#list`,
         );
-      await fetch(innerurl).then(resp => resp.text()).then(innerhtml => {
+      await fetch(innerurl).then(resp => resp.json()).then(innerhtml => {
         const child = document.createElement("div");
-        child.innerHTML = innerhtml;
+        child.innerHTML = innerhtml["contents"];
 
         child.querySelectorAll(".flip-entry").forEach(item1 => {
           if (item1.querySelector(".flip-entry-list-icon img")) {
@@ -78,7 +79,7 @@ const Gallery = () => {
                       <img
                         style={{ filter: 'opacity(0.7)', width: '100%' }}
                         className="d-block"
-                        src={`https://drive.google.com/uc?export=view&id=${itemid}`}
+                        src={`https://drive.usercontent.google.com/download?id=${itemid}`}
                         alt="First slide"
                       />
                     </div>
@@ -100,7 +101,7 @@ const Gallery = () => {
 
                       style={{ width: '100%' }}
                       className="d-block"
-                      src={`https://drive.google.com/uc?export=view&id=${listImg[event][0]}`}
+                      src={`https://drive.usercontent.google.com/download?id=${listImg[event][0]}`}
                       alt="First slide"
                     />
                     <OverlayTrigger placement={'bottom'} overlay={<Tooltip id="tooltip-disabled">{event}</Tooltip>}>
