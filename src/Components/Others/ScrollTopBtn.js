@@ -29,6 +29,7 @@ const ScrollTopBtn = () => {
         bottom: '20px',
         right: '20px',
         display: 'none',
+        "z-index":'999',
     }
 
     return (

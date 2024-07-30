@@ -95,8 +95,8 @@ const Gallery = () => {
             Object.keys(listImg).map(function (event, index) {
               const result = <p> <span>{event}</span> {listImg[event].map(imgID => (<p>{imgID}</p>))}</p>;
               return (
-                <div key={index} className="col-lg-3 col-md-4 col-sm-6 mt-2">
-                  <div onClick={() => showImage(listImg[event])} style={{ width: "100%", cursor: 'pointer' }} className='img-thumbnail'>
+                <div key={index} className="col-lg-3 col-md-4 col-sm-6 mt-2" >
+                  <div onClick={() => showImage(listImg[event])} style={{ width: "100%", cursor: 'pointer', backgroundColor:'var(--brand-light-col)' }} className='img-thumbnail'>
                     <img
 
                       style={{ width: '100%' }}

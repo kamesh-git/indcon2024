@@ -6,7 +6,7 @@ import HeadingComp from '../Others/HeadingComp'
 const SieAbt = () => {
 	return (
 		<>
-			<div className="container-fluid padding mb-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="500">
+			<div className="container-fluid padding pb-3" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" data-aos-duration="500">
 				<div className="row">
 					<HeadingComp head={'Society of Industrial Engineers(SIE)'} />
 				</div>
