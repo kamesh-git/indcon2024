@@ -79,7 +79,7 @@ const Gallery = () => {
                       <img
                         style={{ filter: 'opacity(0.7)', width: '100%' }}
                         className="d-block"
-                        src={`https://drive.usercontent.google.com/download?id=${itemid}`}
+                        src={`https://drive.google.com/thumbnail?id=${itemid}&sz=w1000`}
                         alt="First slide"
                       />
                     </div>
@@ -101,7 +101,7 @@ const Gallery = () => {
 
                       style={{ width: '100%' }}
                       className="d-block"
-                      src={`https://drive.usercontent.google.com/download?id=${listImg[event][0]}`}
+                      src={`https://drive.google.com/thumbnail?id=${listImg[event][0]}`}
                       alt="First slide"
                     />
                     <OverlayTrigger placement={'bottom'} overlay={<Tooltip id="tooltip-disabled">{event}</Tooltip>}>
