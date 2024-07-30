@@ -101,7 +101,7 @@ const Gallery = () => {
 
                       style={{ width: '100%' }}
                       className="d-block"
-                      src={`https://drive.google.com/thumbnail?id=${listImg[event][0]}`}
+                      src={`https://drive.google.com/thumbnail?id=${listImg[event][0]}&sz=w1000`}
                       alt="First slide"
                     />
                     <OverlayTrigger placement={'bottom'} overlay={<Tooltip id="tooltip-disabled">{event}</Tooltip>}>
